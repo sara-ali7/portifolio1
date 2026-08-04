@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sara Ali - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="dist/output.css" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="bg-black text-white">
+  <header class="fixed w-full bg-black z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+
+      <h1 class="text-2xl font-bold text-yellow-500">
+        SARA ALI
+      </h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+        <li><a href="#skills" class="hover:text-yellow-500">Skills</a></li>
+        <li><a href="#projects" class="hover:text-yellow-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-yellow-500">
+        ☰
+      </button>
+    </div>
+  </header>
+  <section id="home" class="min-h-screen flex items-center bg-cover bg-center">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+      <div>
+        <p class="text-yellow-500 uppercase tracking-widest">Hello!</p>
+        <h1 class="text-5xl font-bold mt-4">
+          I'm <span class="text-yellow-500">Sara Ali</span>
+        </h1>
+        <p class="mt-6 text-lg text-yellow-500">
+          Front-end Web Developer
+        </p>
+        <p class="text-gray-400 leading-relaxed">
+          As a dedicated 3rd Year Software Engineering student and aspiring Front-end Developer,
+          I specialize in creating modern, responsive web applications. I am passionate about
+          clean code, intuitive UI/UX design, and building real-world projects that solve problems.
+          I am constantly learning and pushing myself to become a professional software engineer.
+        </p>    
+        <button type="button" class="mt-6 inline-block bg-yellow-500 px-6 py-2 rounded-full text-black
+             transition duration-300 ease-in-out hover:bg-yellow-400 hover:scale-105 hover:shadow-lg"
+             onclick="window.open('asset/CV.pdf', '_blank')">
+             Download CV
+        </button>
+      </div>
+      <div>
+        <img src="asset/images/profile.png"
+          class="rounded-xl w-64 md:w-72 lg:w-80 h-auto shadow-lg object-contain -ml-120" alt="profile picture">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-black text-white">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 px-6">
+      <div>
+        <img src="asset/images/profile.png" class="rounded-full w-64 h-80 object-contain ml-100" alt="profile picture">
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold mb-6">
+          About <span class="text-yellow-500">Me</span>
+        </h2>
+        <ul class="space-y-2 text-gray-400">
+          <li><strong>Name:</strong> Sara Ali</li>
+          <li><strong>Date of birth:</strong> September, 2005</li>
+          <li><strong>Address:</strong> Addis Ababa, Ethiopia</li>
+          <li><strong>Email:</strong> saraali@gmail.com</li>
+          <li><strong>Phone:</strong> +251 000 000 000</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-black text-white py-16 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold">My <span class="text-yellow-500">Skills</span></h2>
+        <p class="text-gray-400 mt-3 text-lg">Technologies I work with — backed by real projects & experience</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 xl:grid-cols-4 gap-2 md:gap-8">
+        <div
+          class="bg-black rounded-lg p-4 shadow-md hover:shadow-2xl hover:scale-[1.03] transition duration-300 border border-gray-700 max-w-xs mx-auto">
+          <div class="flex items-center justify-center mb-4">
+            <img src="asset/icons/js-logo.png" alt="JavaScript" class="w-12 h-16 md:w-20 md:h-20 object-contain">
+          </div>
+          <h3 class="text-xl text-yellow-500 font-semibold text-center mb-2">JavaScript</h3>
+        </div>
+        <div
+          class="bg-black rounded-lg p-4 shadow-md hover:shadow-2xl hover:scale-[1.03] transition duration-300 border border-gray-700 max-w-xs mx-auto">
+          <div class="flex items-center justify-center mb-4">
+            <img src="asset/icons/react.png" alt="React" class="w-12 h-16 md:w-20 md:h-20 object-contain">
+          </div>
+          <h3 class="text-xl text-yellow-500 font-semibold text-center mb-2">React</h3>
+        </div>
+        <div
+          class="bg-black rounded-lg p-4 shadow-md hover:shadow-2xl hover:scale-[1.03] transition duration-300 border border-gray-700 max-w-xs mx-auto">
+          <div class="flex items-center justify-center mb-4">
+            <img src="asset/icons/mysql.png" alt="MySQL" class="w-12 h-16 md:w-20 md:h-20 object-contain">
+          </div>
+          <h3 class="text-xl text-yellow-500 font-semibold text-center mb-2">MySQL</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-black text-white py-20" class="grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-14">
+        My <span class="text-yellow-500">Projects</span>
+      </h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div
+          class="bg-black rounded-lg overflow-hidden shadow-lg hover:scale-105 transition border border-gray-700 duration-300">
+          <img src="asset/images/project1.png" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl text-yellow-500 font-semibold mb-2">Portfolio Website</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              A modern responsive portfolio built using HTML, Tailwind CSS, and JavaScript.
+            </p>
+            <div class="flex justify-between items-center">
+              <a href="https://github.com/sara-ali7" class="text-yellow-500 text-sm hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black rounded-lg overflow-hidden shadow-lg hover:scale-105 transition border border-gray-700 duration-300">
+          <img src="asset/images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl text-yellow-500 font-semibold mb-2">CBTP Front-end</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Vaccination Management System (Frontend) using react.
+            </p>
+            <div class="flex justify-between items-center">
+              <a href="https://github.com/sara-ali7" class="text-yellow-500 text-sm hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-black text-white py-16 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-14">
+        Contact <span class="text-yellow-500">Me</span>
+        <p class="text-gray-400 mt-3 text-lg font-normal">
+          I'm always excited to discuss new projects, creative ideas,
+          or opportunities to be part of your vision.
+        </p>
+        <p class="text-gray-400 mt-3 text-lg font-normal">Looking forward to hearing from you!</p>
+      </h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-yellow-500">Let's Talk</h3>
+            <p class="text-gray-400 text-sm">
+              Feel free to reach out for collaborations or just a friendly hello 👋
+            </p>
+          </div>
+          <div class="space-y-4 text-sm">
+            <p><span class="text-yellow-500 font-semibold">Email:</span> saraali@gmail.com</p>
+            <p><span class="text-yellow-500 font-semibold">Phone:</span> +251 900 000 000</p>
+            <p><span class="text-yellow-500 font-semibold">Location:</span> Addis Ababa, Ethiopia</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-yellow-500">Connect</h3>
+          <div class="flex space-x-4">
+            <a href="https://github.com/sara-ali7" class="hover:text-yellow-500 transition">
+              <img src="asset/icons/github.png" alt="">
+              GitHub
+            </a>
+            <a href="#" class="hover:text-yellow-500 transition">
+              <img src="asset/icons/linkedin.png" alt="">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class=" text-white py-6 md:px-12 max-w-6xl mx-auto px-6">
+    <div class="text-center text-sm text-gray-500 mt-8 border-t border-gray-800 pt-6">
+      © 2026 Sara Ali. All rights reserved.
+      Crafted with passion and clean code.🌟
+    </div>
+  </footer>
+</body>
+</html>

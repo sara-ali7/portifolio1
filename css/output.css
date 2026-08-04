@@ -1,0 +1,5 @@
+#home, #skills, #contact {
+  background-image: url('../asset/images/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
